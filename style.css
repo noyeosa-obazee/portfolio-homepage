@@ -202,35 +202,40 @@ a {
   font-size: 1.5rem;
   position: relative;
   overflow: hidden;
-}
-.card-image-placeholder::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
-  transform: skewX(-25deg);
-  transition: 0.7s;
-}
-.project-card:hover .card-image-placeholder::before {
-  left: 125%;
-}
 
-.card-1 .card-image-placeholder {
-  background-color: var(--card-red);
-}
-.card-2 .card-image-placeholder {
-  background-color: var(--card-purple);
-}
-.card-3 .card-image-placeholder {
-  background-color: var(--card-green);
+  &.one {
+    background: url(./images/battleship_screenshot.png);
+  }
+
+  &.two {
+    background: url(./images/tic-tac-toe_screenshot.png);
+  }
+
+  &.three {
+    background: url(./images/calculator_screenshot.png);
+  }
+  &.four {
+    background: url(./images/weather_screenshot.png);
+  }
+  &.five {
+    background: url(./images/my-library_screenshot.png);
+  }
+  &.six {
+    background: url(./images/to-do_screenshot.png);
+  }
+  &.seven {
+    background: url(./images/rps_screenshot.png);
+  }
+  &.one,
+  &.two,
+  &.three,
+  &.four,
+  &.five,
+  &.six,
+  &.seven {
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .card-content {
