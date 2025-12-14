@@ -158,7 +158,6 @@ a {
 }
 
 .social-icons a:hover {
-  color: var(--card-blue);
   transform: translateY(-3px) rotate(10deg);
 }
 
@@ -248,9 +247,6 @@ a {
   margin-left: 10px;
   transition: color 0.3s;
 }
-.card-links a:hover {
-  color: var(--primary-teal);
-}
 
 .contact-section {
   background-color: var(--primary-teal);
@@ -337,10 +333,6 @@ a {
 }
 
 @media (max-width: 600px) {
-  .hero-section {
-    margin-bottom: 130px;
-  }
-
   .hero-image-container {
     width: 250px;
     height: 250px;
