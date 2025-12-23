@@ -226,13 +226,21 @@ a {
   &.seven {
     background: url(./images/rps_screenshot.png);
   }
+  &.eight {
+    background: url(./images/cv_forge_screenshot.png);
+  }
+  &.nine {
+    background: url(./images/memory_card_screenshot.png);
+  }
   &.one,
   &.two,
   &.three,
   &.four,
   &.five,
   &.six,
-  &.seven {
+  &.seven,
+  &.eight,
+  &.nine {
     background-size: cover;
     background-position: center;
   }
